@@ -3,10 +3,6 @@ using homework_2;
 
 public class Computations
 {
-    public static void MethodThatThrows()
-    {
-        throw new Exception();
-    }
     public static double COMPUTE_MEAN(int [] valuesList)
     {
         if (valuesList.Equals(null))

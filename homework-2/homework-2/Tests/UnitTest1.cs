@@ -7,11 +7,13 @@ public class Tests
     [SetUp]
     public void Setup()
     {
+        
     }
 
     [Test]
-    public void Test1()
+    public void TestCOMPUTE_STANDARD_DEVIATION()
     {
-        Assert.Throws<Exception>(Computations.MethodThatThrows);
+        int[] sampleValuesList = new int[5] {9, 6, 8, 5, 7};
+        Assert.That(() => Computations.COMPUTE_STANDARD_DEVIATION(sampleValuesList, true), Throws.Nothing);
     }
 }
